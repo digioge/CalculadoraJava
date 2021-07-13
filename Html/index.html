@@ -15,16 +15,46 @@
 <body>
 
     <div class="container">
-        <div class="header">
-            <h1>Calculadora</h1>
+        <nav class="navbar">
+            <div class="container-fluid header">
+                <span class="navbar-brand"><h1>Calculadora</h1></span>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="#" placeholder="Digite um numero">
+                </div>
+                <div class="col-md-4">
+                    <input type="listaoperacoes" class="form-control" list="lista" placeholder="--Selecione uma operação--">
+                    <datalist id="lista">
+                    <option value="Subtração">
+                    <option value="Adição">
+                    <option value="Multiplicação">
+                    <option value="Divisão">
+                  </datalist>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="#" placeholder="Digite um numero">
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+
+        <div class="container-fluid">
+            <div class="col-md-12" style="text-align: right;">
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </div>
         </div>
 
-        <div id="formulario">
-            <span><input type="number" class="form-control" id="#" placeholder="Digite um numero"></span>
-            <span><input type="number" class="form-control" id="#" placeholder="Digite um numero"></span>
-            <span><input type="number" class="form-control" id="#" placeholder="Digite um numero"></span>
+
+        <div class="container-fluid" id="resultado">
+            <label>Resultado:</label>
+            <input type="text " class="form-control ">
         </div>
-    </div>
+        </div>
+
+
 </body>
 
 </html>
