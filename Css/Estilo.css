@@ -1,24 +1,23 @@
     .header {
         background: lightyellow;
-        height: 200px;
+        height: 180px;
     }
-    /*
+    
     #formulario {
         padding-top: 50px;
-        padding-bottom: 50px;
+        /* padding-bottom: 50px;*/
     }
-    */
     
     #resultado {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     h1 {
-        font-size: 70px;
-        border: 1px solid red;
+        font-size: 60px;
+        padding-top: 30px;
     }
     
     body {
-        background: lightgrey;
+        overflow-y: unset;
     }
