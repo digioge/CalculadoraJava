@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Css/Estilo.css">
     <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../Js/scripts"></script>
+    <script src="../Js/scripts.js"></script>
     <title>Calculadora</title>
 </head>
 
@@ -16,43 +16,44 @@
 
     <div class="container">
         <nav class="navbar container-fluid header">
-            <div class="">
-                <span class="navbar-brand"><h1>CALCULADORA</h1></span>
+            <span class="navbar-brand"><h1>CALCULADORA</h1></span>
         </nav>
         <div class="container-fluid" id="formulario">
             <div class="row">
                 <div class="col-md-4">
-                    <input type="text" class="form-control" id="#" placeholder="Digite um numero">
+                    <input type="text" class="form-control" id="n1" placeholder="Digite um numero">
                 </div>
+
                 <div class="col-md-4">
-                    <input type="listaoperacoes" class="form-control" list="lista" placeholder="--Selecione uma operação--">
-                    <datalist id="lista">
-                    <option value="Subtração">
-                    <option value="Adição">
-                    <option value="Multiplicação">
-                    <option value="Divisão">
-                  </datalist>
+                    <select class="form-control" id="operacao">
+                    <option value="">--Selecione uma operação--</option>
+                    <option value="1">Subtração</option>
+                    <option value="2">Adição</option>
+                    <option value="3">Multiplicação</option>
+                    <option value="4">Divisão</option>
+                    </select>
                 </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control" id="#" placeholder="Digite um numero">
+
+                <div class="col-md-4 ">
+                    <input type="text " class="form-control " id="n2" placeholder="Digite um numero ">
                 </div>
             </div>
         </div>
         <br><br>
 
 
-        <div class="container-fluid">
-            <div class="col-md-12" style="text-align: right;">
-                <button type="submit" class="btn btn-primary">Calcular</button>
+        <div class="container-fluid ">
+            <div class="col-md-12 " style="text-align: right; ">
+                <button type="button " class="btn btn-primary " onclick='_calcular()'>Calcular</button>
             </div>
         </div>
 
 
-        <div class="container-fluid" id="resultado">
+        <div class="container-fluid " id="resultado">
             <label>Resultado:</label>
-            <input type="text " class="form-control ">
+            <input id="result" type="text " class="form-control" readonly>
         </div>
-        </div>
+    </div>
 
 
 </body>

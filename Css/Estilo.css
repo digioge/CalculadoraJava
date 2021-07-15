@@ -13,6 +13,10 @@
         padding-bottom: 20px;
     }
     
+    #selecao {
+        width: 600px;
+    }
+    
     h1 {
         font-size: 60px;
         padding-top: 30px;
